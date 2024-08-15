@@ -3,10 +3,18 @@ import Whatsapp from "./img/Whatsapp.astro"
 import MailIcon from "./img/MailIcon.astro"
 import LocationIcon from "./img/LocationIcon.astro"
 ---
-<section>
-<h2 class="text-white"> Contactame</h2>
-<p class="text-white ">Para más información, contáctame sin compromiso.</p>
-<p class="text-white flex gap-2 items-center" ><Whatsapp class="size-4"></Whatsapp> 092665328</p>
-<p class="text-white flex gap-2 items-center"><MailIcon class="size-4"></MailIcon> correo@gmail.com</p>
-<p class="text-white flex gap-2 items-center"><LocationIcon class="size-4"></LocationIcon> Durazno, Uruguay</p>
+<section class="w-full mt-20 bg-white">
+<h2 class="text-4xl text-center text-black font-black pt-7"> Contactame</h2>
+<p class="text-black text-3xl text-center mt-3 mb-5 font-semibold">Para más información, contáctame sin compromiso.</p>
+<article class="ml-20 text-3xl flex justify-center gap-60">
+    <div class="h-full">
+        <h4 class="text-black my-10 font-semibold">Datos:</h4>
+        <p class="text-black flex gap-2 items-center pl-5 mb-7 font-semibold" ><Whatsapp class="size-6"></Whatsapp> 092665328</p>
+        <p class="text-black flex gap-2 items-center pl-5 mb-7 font-semibold"><MailIcon class="size-6"></MailIcon> correo@gmail.com</p>
+        <p class="text-black flex gap-2 pl-5 items-center font-semibold"><LocationIcon class="size-6"></LocationIcon> Durazno, Uruguay</p>
+    </div>
+    <div>
+        <img src="/contactameImg.webp" class="animate-pulse"/>
+    </div>
+</article>
 </section>
