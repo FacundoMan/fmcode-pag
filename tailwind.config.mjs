@@ -3,7 +3,13 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: 'class',
 	theme: {
-		extend: {},
+		extend: {
+			colors:{  
+			transparent: 'transparent',
+			current: 'currentColor',
+			verde:"#28A745"
+		}},
+		
 	},
 	plugins: [],
 }
