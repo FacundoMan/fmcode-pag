@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import animations from '@midudev/tailwind-animations'
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: 'class',
@@ -10,7 +10,11 @@ export default {
 			current: 'currentColor',
 			verde:"#28A745"
 		}},
+		backgroundImage: {
+			'imagen-1': "url('/programacion.webp')",
+			'footer-texture': "url('/img/footer-texture.png')",
+		  },
 		
 	},
-	plugins: [animations],
+	plugins: [],
 }
