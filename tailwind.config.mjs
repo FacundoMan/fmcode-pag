@@ -11,14 +11,18 @@ export default {
 			verde:"#28A745",
 			violeta:{
 				1:'#693167',
+				2:'#4f254d',
+				3:'#341833',
 				4:'#1a0c1a'
 			},
 			celeste:'#00BFB2'
-		}},
-		backgroundImage: {
+		},
+	backgroundImage: {
 			'imagen-1': "url('/programacion.webp')",
 			'footer-texture': "url('/img/footer-texture.png')",
 		  },
+	},
+		
 		
 	},
 	plugins: [],
