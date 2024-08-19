@@ -8,7 +8,12 @@ export default {
 			colors:{  
 			transparent: 'transparent',
 			current: 'currentColor',
-			verde:"#28A745"
+			verde:"#28A745",
+			violeta:{
+				1:'#693167',
+				4:'#1a0c1a'
+			},
+			celeste:'#00BFB2'
 		}},
 		backgroundImage: {
 			'imagen-1': "url('/programacion.webp')",
