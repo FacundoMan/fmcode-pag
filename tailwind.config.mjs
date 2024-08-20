@@ -10,12 +10,14 @@ export default {
 			current: 'currentColor',
 			verde:"#28A745",
 			violeta:{
-				1:'#693167',
-				2:'#4f254d',
-				3:'#341833',
-				4:'#1a0c1a'
+				1:'#564D8C',
+				2:'#6F428C',
+				3:'#8C2786',
+				4:'#73294C'
 			},
-			celeste:'#00BFB2'
+			celeste:'#00BFB2',
+			blanco1:'#F2F2F2',
+			amarillo:'#FFFB01'
 		},
 	backgroundImage: {
 			'imagen-1': "url('/programacion.webp')",

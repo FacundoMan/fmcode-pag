@@ -3,14 +3,14 @@ import LogoIcon from "./img/LogoIconFMcode.astro"
 const nombreEmpresa="{FMcode}"
 ---
 
-<header class="flex items-center bg-violeta-4 text-celeste justify-between px-3 sticky top-0 z-50" > 
-    <div class="flex items-center"><LogoIcon class="size-20 fill-celeste"></LogoIcon> <span class="text-2xl">{nombreEmpresa} </span></div>
+<header class="flex items-center bg-violeta-4 text-blanco1 justify-between px-3 sticky top-0 z-50" > 
+    <div class="flex items-center"><LogoIcon class="size-20 fill-blanco1"></LogoIcon> <span class="text-2xl">{nombreEmpresa} </span></div>
     
   
     <nav  class="font-mono gap-3">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a aria-label="Regresa arriba de la pagina" href="#top" class="hover:text-amarillo">Home</a>
+        <a aria-label="Lleva a una breve descripcion de la empresa" href="#about" class="hover:text-amarillo">About</a>
+        <a aria-label="Dirige a los servicios que ofrecemos " href="#service" class="hover:text-amarillo">Servicios</a>
+        <a aria-label="Lleva a los distintos contacto que contamos" href="#contact" class="hover:text-amarillo">Contacto</a>
     </nav>
 </header>
