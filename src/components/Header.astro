@@ -1,16 +1,32 @@
 ---
 import LogoIcon from "./img/LogoIconFMcode.astro"
+import MenuIcon from "./img/MenuIcon.astro"
+
+
 ---
 
 <header class="flex items-center bg-violeta-4 text-blanco1 justify-between px-3 sticky top-0 z-50" > 
     <div class="flex items-center"><LogoIcon class="size-16 fill-blanco1"></LogoIcon> 
         <div class="text-2xl"><span class="font-semibold">FM</span><span class="font-meriendaFont font-semibold">Codev</span></div></div>
-    
-  
-    <nav  class="font-mono font-semibold gap-3 pr-5">
+    <nav id="hamburgerMenu" class="lg:hidden pr-5">
+         <MenuIcon ></MenuIcon>
+    </nav>
+   
+    <nav id="menu" class="w-full lg:w-fit font-mono font-semibold gap-3 pb-9 pl-3 lg:pb-0 lg:pr-5 lg:block hidden  absolute inset-0 lg:relative top-14  lg:top-0 bg-violeta-4 text-2xl lg:text-xl">
         <a aria-label="Regresa arriba de la pagina" href="#top" class="hover:text-amarillo">Home</a>
         <a aria-label="Lleva a una breve descripcion de la empresa" href="#about" class="hover:text-amarillo">About</a>
         <a aria-label="Dirige a los servicios que ofrecemos " href="#service" class="hover:text-amarillo">Servicios</a>
         <a aria-label="Lleva a los distintos contacto que contamos" href="#contact" class="hover:text-amarillo">Contacto</a>
     </nav>
 </header>
+
+<script>
+document.getElementById ("hamburgerMenu").addEventListener ("click", openMenu, false);
+
+
+    function openMenu(){
+        let menu=document.getElementById('menu'); 
+        menu.classList.contains('hidden')? menu.classList.remove('hidden'): menu.classList.add('hidden');
+       
+    }
+</script>
